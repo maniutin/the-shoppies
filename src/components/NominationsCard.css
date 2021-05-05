@@ -1,0 +1,41 @@
+.nominations {
+  width: 35%;
+  text-align: center;
+}
+
+.nominationCard {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2.5vh;
+  align-items: center;
+  border: 2px solid #daa520;
+  padding: 10px;
+}
+
+.nominatedMoviePoster {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: contain;
+}
+
+.border {
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  .nominationCard {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .nominations {
+    width: 40%;
+    text-align: center;
+  }
+
+  .nominatedMoviePoster {
+    height: 17.5vh;
+  }
+}

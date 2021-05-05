@@ -54,7 +54,7 @@ export default function ResultsCard({
                     : disabledBtns.includes(movieCard.imdbID)
                 }
               >
-                nominate
+                NOMINATE
               </Button>
             </article>
           ))

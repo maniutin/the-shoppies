@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "antd";
 import poster from "../assets/the_shoppies_noposter-01.png";
-import border from "../assets/the_shopies_underline-01.png";
 import Banner from "./Banner";
 import "./NominationsCard.css";
 
@@ -30,7 +29,6 @@ export default function NominationsCard({
   return (
     <article className="nominations">
       <h1>My Nominations:</h1>
-      <img src={border} alt="border" className="border" />
       {nominatedMovies.length > 0 ? (
         nominatedMovies.map((nominatedMovie) => (
           <article key={nominatedMovie.imdbID} className="nominationCard">
@@ -60,7 +58,7 @@ export default function NominationsCard({
               type="primary"
               htmlType="submit"
             >
-              remove
+              REMOVE
             </Button>
           </article>
         ))

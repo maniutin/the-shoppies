@@ -1,10 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Form, Input } from "antd";
 import getMovies from "../hooks/useApiData";
+import useDebounce from "../hooks/useDebounce";
+
 import "./SearchBar.css";
 
-export default function SearchBar({ movieList, setMovieList }) {
+export default function SearchBar({ movieList, setMovieList, onMovieSearch }) {
+  const [value, setValue] = useState("");
   const [movieTitle, setMovieTitle] = useState("");
+
+  const term = useDebounce(value, 400);
+
+  const onSearch = useCallback(onMovieSearch, [term]);
+
+  useEffect(() => {
+    onSearch(term);
+  }, [term, onSearch]);
 
   const handleInputChange = (event) => {
     event.preventDefault();
@@ -12,13 +23,13 @@ export default function SearchBar({ movieList, setMovieList }) {
     const target = event.target;
     const title = target.value;
 
-    // live search
+    // ensures live search
     setMovieTitle(title);
 
-    // fetch movie data from OMDB
+    // fetches movie data from OMDB api
     getMovies(title)
       .then((result) => {
-        // sets the movies after the request
+        // sets the movies to display them as a result of request
         setMovieList(result);
       })
       .catch((error) => {
@@ -31,11 +42,12 @@ export default function SearchBar({ movieList, setMovieList }) {
       <Form name="basic" initialValues={{ remember: true }}>
         <Form.Item
           name="movieTitle"
-          rules={[{ required: true, message: "Please input the movie title" }]}
+          rules={[{ required: true, message: "Please input the movie title!" }]}
         >
           <Input
             placeholder="search by movie title"
             onChange={handleInputChange}
+            value={value}
           />
         </Form.Item>
       </Form>

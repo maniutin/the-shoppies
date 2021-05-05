@@ -1,5 +1,6 @@
 .homePage {
   height: 100vh;
+  padding-top: 20vh;
 }
 
 footer {
@@ -9,10 +10,19 @@ footer {
 .linkBtn {
   width: 30%;
   height: 4vh;
-  background-color: #daa520;
-  font-family: "Oswald", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-family: "Quicksand", sans-serif;
   font-size: 2vh;
   cursor: pointer;
+}
+
+.linkBtn:hover {
+  box-shadow: 2px 2px #acacac;
+}
+.linkBtn:active {
+  background-color: black;
 }
 
 a {

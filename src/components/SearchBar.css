@@ -1,0 +1,13 @@
+#searchBar {
+  padding: 5vh 0;
+}
+
+#basic_movieTitle {
+  text-align: center;
+  width: 100%;
+  height: 5vh;
+  font-size: 2vh;
+  outline: 0;
+  background-color: #e2e2e3 !important;
+  font-family: "Oswald", sans-serif;
+}

@@ -1,0 +1,52 @@
+.resultCard {
+  width: 30%;
+  margin: 1vh 1vh 5vh;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #daa520;
+  padding: 10px;
+}
+
+.resultMoviePoster {
+  height: 25.7vh;
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.nominateBtn {
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.movieInfo {
+  font-size: 1.5vh;
+  text-align: center;
+  padding: 2vh;
+  height: 5vh;
+  overflow: scroll;
+}
+
+.results {
+  width: 65%;
+  margin-left: -1vh;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+  .resultCard {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .results {
+    width: 60%;
+  }
+
+  .resultMoviePoster {
+    height: 17.5vh;
+  }
+}
