@@ -10,7 +10,6 @@ function App() {
   const [disabledBtns, setDisabledBtns] = useState([]);
   const [nominatedMovies, setNominatedMovies] = useState([]);
   const [showSearch, setShowSearch] = useState(false);
-  const [term, setTerm] = useState("");
 
   // uses localStorage to save the nominated movies and display them after page is refreshed
   useEffect(() => {
@@ -29,11 +28,7 @@ function App() {
       <Home showSearch={showSearch} setShowSearch={setShowSearch} />
       {showSearch ? (
         <article id="movieSection">
-          <SearchBar
-            movieList={movieList}
-            setMovieList={setMovieList}
-            onMovieSearch={(term) => setTerm(term)}
-          />
+          <SearchBar movieList={movieList} setMovieList={setMovieList} />
           <article id="resultSection">
             <ResultsCard
               movieList={movieList}

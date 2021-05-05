@@ -1,21 +1,10 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState } from "react";
 import { Form, Input } from "antd";
 import getMovies from "../hooks/useApiData";
-import useDebounce from "../hooks/useDebounce";
-
 import "./SearchBar.css";
 
-export default function SearchBar({ movieList, setMovieList, onMovieSearch }) {
-  const [value, setValue] = useState("");
+export default function SearchBar({ movieList, setMovieList }) {
   const [movieTitle, setMovieTitle] = useState("");
-
-  const term = useDebounce(value, 400);
-
-  const onSearch = useCallback(onMovieSearch, [term]);
-
-  useEffect(() => {
-    onSearch(term);
-  }, [term, onSearch]);
 
   const handleInputChange = (event) => {
     event.preventDefault();
@@ -47,7 +36,6 @@ export default function SearchBar({ movieList, setMovieList, onMovieSearch }) {
           <Input
             placeholder="search by movie title"
             onChange={handleInputChange}
-            value={value}
           />
         </Form.Item>
       </Form>
