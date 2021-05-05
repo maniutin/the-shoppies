@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: #e2e2e3;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
