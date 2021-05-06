@@ -17,6 +17,18 @@ Install the dependencies using `npm install` and run the project with `npm start
 
 ## Screenshots
 
+### Homepage
+
+!["Screenshot of Homepage"](https://github.com/maniutin/the-shoppies/blob/main/src/assets/homepage.png)
+
+### Search results with nominations
+
+!["Screenshot of search results with nominations"](https://github.com/maniutin/the-shoppies/blob/main/src/assets/search-results-with-nominations.png)
+
+### End of search results with banner
+
+!["Screenshot of end of search results with banner"](https://github.com/maniutin/the-shoppies/blob/main/src/assets/end-of-nominations-w-banner.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
