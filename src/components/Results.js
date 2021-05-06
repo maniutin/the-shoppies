@@ -3,7 +3,7 @@ import { Button } from "antd";
 import poster from "../assets/the_shoppies_no_poster.svg";
 import "./Results.css";
 
-export default function ResultsCard({
+export default function Results({
   movieList,
   nominatedMovies,
   setNominatedMovies,

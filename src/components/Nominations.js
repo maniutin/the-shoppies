@@ -5,7 +5,7 @@ import Banner from "./Banner";
 import poster from "../assets/the_shoppies_no_poster.svg";
 import "./Nominations.css";
 
-export default function NominationsCard({
+export default function Nominations({
   nominatedMovies,
   setNominatedMovies,
   disabledBtns,

@@ -3,7 +3,7 @@ import { Form, Input } from "antd";
 import getMovies from "../hooks/useApiData";
 import "./Search.css";
 
-export default function SearchBar({ movieList, setMovieList }) {
+export default function Search({ movieList, setMovieList }) {
   const [movieTitle, setMovieTitle] = useState("");
 
   const handleInputChange = (event) => {
