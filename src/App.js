@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SearchBar from "./components/SearchBar";
+import Search from "./components/Search";
 import Results from "./components/Results";
 import Nominations from "./components/Nominations";
 import Home from "./components/Home";
@@ -28,7 +28,7 @@ function App() {
       <Home showSearch={showSearch} setShowSearch={setShowSearch} />
       {showSearch ? (
         <article id="movieSection">
-          <SearchBar movieList={movieList} setMovieList={setMovieList} />
+          <Search movieList={movieList} setMovieList={setMovieList} />
           <article id="resultSection">
             <Results
               movieList={movieList}

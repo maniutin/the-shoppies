@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Input } from "antd";
 import getMovies from "../hooks/useApiData";
-import "./SearchBar.css";
+import "./Search.css";
 
 export default function SearchBar({ movieList, setMovieList }) {
   const [movieTitle, setMovieTitle] = useState("");
