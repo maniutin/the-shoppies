@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+.slogan {
+  font-family: "Pinyon Script", cursive;
+  font-size: 4vh;
+}
+
 .logo {
   width: 40vw;
   margin: 7.5vh 30vw 0;

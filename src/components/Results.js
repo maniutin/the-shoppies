@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "antd";
 import poster from "../assets/the_shoppies_no_poster.svg";
-import "./ResultsCard.css";
+import "./Results.css";
 
 export default function ResultsCard({
   movieList,

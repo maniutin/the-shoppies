@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SearchBar from "./components/SearchBar";
-import ResultsCard from "./components/ResultsCard";
-import NominationsCard from "./components/NominationsCard";
+import Results from "./components/Results";
+import Nominations from "./components/Nominations";
 import Home from "./components/Home";
 import "./App.css";
 
@@ -11,7 +11,7 @@ function App() {
   const [nominatedMovies, setNominatedMovies] = useState([]);
   const [showSearch, setShowSearch] = useState(false);
 
-  // uses localStorage to save the nominated movies and display them after page is refreshed
+  // localStorage to display nominated movies after refresh
   useEffect(() => {
     const nominatedMovies = JSON.parse(localStorage.getItem("nominatedMovies"));
     if (nominatedMovies) {
@@ -30,14 +30,14 @@ function App() {
         <article id="movieSection">
           <SearchBar movieList={movieList} setMovieList={setMovieList} />
           <article id="resultSection">
-            <ResultsCard
+            <Results
               movieList={movieList}
               nominatedMovies={nominatedMovies}
               setNominatedMovies={setNominatedMovies}
               disabledBtns={disabledBtns}
               setDisabledBtns={setDisabledBtns}
             />
-            <NominationsCard
+            <Nominations
               className="nominations"
               nominatedMovies={nominatedMovies}
               setNominatedMovies={setNominatedMovies}

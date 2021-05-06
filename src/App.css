@@ -25,12 +25,12 @@ body {
 }
 
 .ant-btn-primary {
-  background-color: #e2e2e3;
+  background-color: #fff;
   font-family: "Quicksand", sans-serif;
 }
 
 h1 {
-  font-family: "Pinyon Script", cursive;
+  font-family: "Quicksand", cursive;
   font-size: 4vh;
 }
 

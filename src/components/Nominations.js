@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "antd";
+import Banner from "./Banner";
+
 import poster from "../assets/the_shoppies_no_poster.svg";
-import "./NominationsCard.css";
+import "./Nominations.css";
 
 export default function NominationsCard({
   nominatedMovies,
@@ -64,6 +66,7 @@ export default function NominationsCard({
       ) : (
         <h1>You haven't nominated any movies yet</h1>
       )}
+      {nominatedMovies.length === 5 ? <Banner /> : null}
     </article>
   );
 }

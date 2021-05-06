@@ -9,7 +9,7 @@ export default function Home({ showSearch, setShowSearch }) {
         <img className="logo" alt="shoppiesLogo" src={logo} />
       </a>
       <article>
-        <h1>Movie awards for entrepreneurs</h1>
+        <h1 className="slogan">Movie awards for entrepreneurs</h1>
         <a href="#searchBar">
           <button
             className="linkBtn"
