@@ -3,6 +3,10 @@
 This project was created for Shopify UX Developer Intern & Web Developer Intern Challenge - Fall 2021. Search for any movie title via OMDB API and select movies you would like to nominate for The Shoppie award (up to 5).
 Install the dependencies using `npm install` and run the project with `npm start`.
 
+## Live Demo
+
+The project can be viewed using [This link](https://60943008a80d570007ec152f--dazzling-nightingale-8178d2.netlify.app/).
+
 ## Dependencies
 
 - ant-design/icons
