@@ -1,6 +1,7 @@
 # The Shoppies
 
-This project was created for Shopify UX Developer Intern & Web Developer Intern Challenge - Fall 2021.
+This project was created for Shopify UX Developer Intern & Web Developer Intern Challenge - Fall 2021. Search for any movie title via OMDB API and select movies you would like to nominate for The Shoppie award (up to 5).
+Install the dependencies using `npm install` and run the project with `npm start`.
 
 ## Dependencies
 
