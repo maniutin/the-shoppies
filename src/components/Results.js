@@ -41,7 +41,7 @@ export default function ResultsCard({
                 />
               </a>
               <section className="movieInfo">
-                {movieCard.Title} | {movieCard.Year}
+                {movieCard.Title} ({movieCard.Year})
               </section>
               <Button
                 className="nominateBtn"
