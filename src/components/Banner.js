@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <article>
       <br />
-      <h1>Thank you for your nominations!</h1>
+      <h1>5 title limit exceeded. Thank you for your nominations!</h1>
     </article>
   );
 }
