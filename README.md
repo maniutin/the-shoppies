@@ -15,6 +15,8 @@ Install the dependencies using `npm install` and run the project with `npm start
 - @testing-library/react
 - @testing-library/user-event
 
+## Screenshots
+
 ## Available Scripts
 
 In the project directory, you can run:
