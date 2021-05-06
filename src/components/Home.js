@@ -5,7 +5,9 @@ import "./Home.css";
 export default function Home({ showSearch, setShowSearch }) {
   return (
     <article className="homePage">
-      <img className="logo" alt="shoppiesLogo" src={logo} />
+      <a href="/">
+        <img className="logo" alt="shoppiesLogo" src={logo} />
+      </a>
       <article>
         <h1>Movie awards for entrepreneurs</h1>
         <a href="#searchBar">
