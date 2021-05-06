@@ -1,12 +1,12 @@
 import React from "react";
-import logo from "../assets/the_shoppies_logo-01.svg";
+import logo from "../assets/the_shoppies_logo.svg";
 import "./Home.css";
 
 export default function Home({ showSearch, setShowSearch }) {
   return (
     <article className="homePage">
       <img className="logo" alt="shoppiesLogo" src={logo} />
-      <footer>
+      <article>
         <h1>Movie awards for entrepreneurs</h1>
         <a href="#searchBar">
           <button
@@ -16,7 +16,7 @@ export default function Home({ showSearch, setShowSearch }) {
             NOMINATE MOVIES
           </button>
         </a>
-      </footer>
+      </article>
     </article>
   );
 }

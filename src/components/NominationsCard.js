@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "antd";
-import poster from "../assets/the_shoppies_noposter-01.png";
+import poster from "../assets/the_shoppies_no_poster.svg";
 import "./NominationsCard.css";
 
 export default function NominationsCard({

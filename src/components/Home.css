@@ -1,9 +1,6 @@
 .homePage {
   height: 100vh;
   padding-top: 20vh;
-}
-
-footer {
   text-align: center;
 }
 
@@ -22,7 +19,7 @@ footer {
   box-shadow: 2px 2px #acacac;
 }
 .linkBtn:active {
-  background-color: black;
+  background-color: #858585;
 }
 
 a {

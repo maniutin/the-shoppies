@@ -31,7 +31,9 @@ export default function SearchBar({ movieList, setMovieList }) {
       <Form name="basic" initialValues={{ remember: true }}>
         <Form.Item
           name="movieTitle"
-          rules={[{ required: true, message: "Please input the movie title!" }]}
+          rules={[
+            { required: true, message: "Please, enter the movie title!" },
+          ]}
         >
           <Input
             placeholder="search by movie title"
