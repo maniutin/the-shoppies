@@ -5,7 +5,7 @@ Install the dependencies using `npm install` and run the project with `npm start
 
 ## Live Demo
 
-The project can be viewed using [This link](https://60943008a80d570007ec152f--dazzling-nightingale-8178d2.netlify.app/).
+The project can be viewed using [this link](https://60943008a80d570007ec152f--dazzling-nightingale-8178d2.netlify.app/).
 
 ## Dependencies
 
