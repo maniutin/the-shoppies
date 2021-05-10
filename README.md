@@ -15,9 +15,6 @@ The project can be viewed using [this link](https://60943008a80d570007ec152f--da
 - react-dom
 - react-scripts
 - web-vitals
-- @testing-library/jest-dom
-- @testing-library/react
-- @testing-library/user-event
 
 ## Screenshots
 
